@@ -97,9 +97,21 @@ class LevelNav extends HTMLElement {
     const navBar = document.createElement('nav');
 
     const navItems = [
-      { url: 'https://level.game', html: 'Home' },
-      { url: 'https://blog.level.game', html: 'Blog' },
-      { url: 'https://careers.level.game', html: 'Careers' },
+      {
+        url: 'https://level.game',
+        html: 'Home',
+        //shouldHighlight: hlNavItem.toLowerCase() === 'home',
+      },
+      {
+        url: 'https://blog.level.game',
+        html: 'Blog',
+        //shouldHighlight: hlNavItem.toLowerCase() === 'blog',
+      },
+      {
+        url: 'https://careers.level.game',
+        html: 'Careers',
+        //shouldHighlight: hlNavItem.toLowerCase() === 'careers',
+      },
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
       {
         url: 'https://www.instagram.com/leveldotgame/',
@@ -126,7 +138,16 @@ class LevelNav extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('DOM Elem Connected');
+    const hlNavItem = this.getAttribute('highlight-nav-item') || '';
+    const navItems = this.shadowRoot.querySelectorAll('ul > li');
+
+    navItems.forEach((nav) => {
+      if (
+        nav.textContent.toLowerCase().trim() === hlNavItem.toLowerCase().trim()
+      ) {
+        nav.classList.add('selected');
+      }
+    });
   }
 }
 
