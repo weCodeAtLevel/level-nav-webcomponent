@@ -100,17 +100,14 @@ class LevelNav extends HTMLElement {
       {
         url: 'https://level.game',
         html: 'Home',
-        //shouldHighlight: hlNavItem.toLowerCase() === 'home',
       },
       {
         url: 'https://blog.level.game',
         html: 'Blog',
-        //shouldHighlight: hlNavItem.toLowerCase() === 'blog',
       },
       {
         url: 'https://careers.level.game',
-        html: 'Careers',
-        //shouldHighlight: hlNavItem.toLowerCase() === 'careers',
+        html: 'Jobs',
       },
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
       {
@@ -160,6 +157,7 @@ function getCSS() {
         --color-primary: #7356e8;
         --color-text: #343232;
         --max-width: 45rem;
+        font-family: "Open Sans", "Lato", "IBM Plex Sans", Helvetica, Arial, sans-serif;
       }
 
       nav#top-nav {
