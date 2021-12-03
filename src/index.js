@@ -105,10 +105,10 @@ class LevelNav extends HTMLElement {
         //url: 'https://feel.level.game',
         //html: 'Feel',
       //},
-      {
-        url: 'https://careers.level.game',
-        html: 'Jobs',
-      },
+      //{
+        //url: 'https://careers.level.game',
+        //html: 'Jobs',
+      //},
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
       {
         url: 'https://www.instagram.com/leveldotgame/',
