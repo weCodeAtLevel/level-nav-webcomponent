@@ -114,7 +114,7 @@ class LevelNav extends HTMLElement {
         html: 'About Us',
       },
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
-      { url: 'https://level.game/terms-and-conditions.html', html: 'T&C', target: '_blank' },
+      //{ url: 'https://level.game/terms-and-conditions.html', html: 'T&C', target: '_blank' },
       {
         url: 'https://www.instagram.com/leveldotgame/',
         html: getIconInstagram(),
