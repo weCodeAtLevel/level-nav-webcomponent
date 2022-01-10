@@ -38,21 +38,10 @@ function createHamburgerMenu(navBarElem) {
 function createLogo() {
   const a = document.createElement('a');
   const img_1 = document.createElement('img');
-  const img_2 = document.createElement('img');
-  const img_3 = document.createElement('img');
 
-  const CDN = 'https://d5rp90v83afv2.cloudfront.net';
-  const LCircle = `${CDN}/logos/LevelCircle.png`;
-  const LE = `${CDN}/logos/LE.png`;
-  const EL = `${CDN}/logos/EL.png`;
-
-  img_1.src = LE;
-  img_3.src = EL;
-  img_2.src = LCircle;
+  img_1.src = `https://res.cloudinary.com/levelapp/image/upload/v1641800450/level-logo_mmpuhk.png`;
 
   a.appendChild(img_1);
-  a.appendChild(img_2);
-  a.appendChild(img_3);
   a.href = 'https://level.game';
   a.classList.add('brand');
 
@@ -102,12 +91,12 @@ class LevelNav extends HTMLElement {
         html: 'Home',
       },
       //{
-        //url: 'https://feel.level.game',
-        //html: 'Feel',
+      //url: 'https://feel.level.game',
+      //html: 'Feel',
       //},
       //{
-        //url: 'https://careers.level.game',
-        //html: 'Jobs',
+      //url: 'https://careers.level.game',
+      //html: 'Jobs',
       //},
       {
         url: 'https://about.level.game',
@@ -183,8 +172,8 @@ function getCSS() {
 
       #top-nav .brand img {
         width: auto;
-        height: 2rem;
         margin: 0.15rem;
+        max-width: 10rem;
       }
 
       #top-nav ul {
@@ -242,7 +231,7 @@ function getCSS() {
         }
 
         #top-nav .brand img {
-          max-height: 1.5rem;
+          max-width: 9rem;
         }
 
         #top-nav .handler_mobile-only {
@@ -293,8 +282,6 @@ function getCSS() {
       @media only screen and (min-width: 700px) and (max-width: 1024px) {
         #top-nav .brand img {
           width: auto;
-          height: 2rem !important;
-          max-height: 2rem !important;
         }
         .handler_mobile-only {
           height: 40px;
