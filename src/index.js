@@ -103,8 +103,8 @@ class LevelNav extends HTMLElement {
         html: 'About Us',
       },
       {
-        url: 'https://rzp.io/l/zvE6WPg',
-        html: 'Workshop',
+        url: 'https://bootcamp.level.game',
+        html: 'Bootcamp',
       },
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
       //{ url: 'https://level.game/terms-and-conditions.html', html: 'T&C', target: '_blank' },
