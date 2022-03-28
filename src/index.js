@@ -39,7 +39,7 @@ function createLogo() {
   const a = document.createElement('a');
   const img_1 = document.createElement('img');
 
-  img_1.src = `https://res.cloudinary.com/levelapp/image/upload/v1641800988/level-logo_ys0b2c.png`;
+  img_1.src = `https://www.level.game/logo.png`;
 
   a.appendChild(img_1);
   a.href = 'https://level.game';
