@@ -102,10 +102,10 @@ class LevelNav extends HTMLElement {
         url: 'https://about.level.game',
         html: 'About Us',
       },
-      {
-        url: 'https://bootcamp.level.game',
-        html: 'Bootcamp',
-      },
+      //{
+        //url: 'https://bootcamp.level.game',
+        //html: 'Bootcamp',
+      //},
       { url: 'mailto:social@level.game', html: 'Contact', target: '_blank' },
       //{ url: 'https://level.game/terms-and-conditions.html', html: 'T&C', target: '_blank' },
       {
